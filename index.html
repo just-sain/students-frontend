@@ -1,0 +1,236 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<title>Students</title>
+		<link rel="stylesheet" href="./css/style.css" />
+	</head>
+	<body>
+		<div class="wrapper">
+			<header class="header">
+				<h1>Студенты</h1>
+			</header>
+
+			<!-- main -->
+			<main class="main">
+				<h2 class="title">Студенты группы ИС22-1Б</h2>
+
+				<!-- table with data -->
+				<section style="overflow-x: auto">
+					<table id="table" class="table">
+						<tr>
+							<th>Имя</th>
+							<th>Фамилия</th>
+							<th>Отчество</th>
+							<th>Адрес</th>
+							<th>Номер телефона</th>
+							<th>Дата рождения</th>
+							<th>Возраст</th>
+							<th>Почта</th>
+							<th>ИИН</th>
+							<th>Сколько человек в семье</th>
+							<th>Национальность</th>
+							<th>Заметка</th>
+							<!-- Ma -->
+							<th>Имя Матери</th>
+							<th>Фамилия Матери</th>
+							<th>Отчество Матери</th>
+							<th>Номер телефона Матери</th>
+							<th>Работа Матери</th>
+							<th>Адрес работа Матери</th>
+							<th>Семейное положение Матери</th>
+							<th>Дата рождения Матери</th>
+							<th>Возраст Матери</th>
+							<!-- Da -->
+							<th>Имя Отца</th>
+							<th>Фамилия Отца</th>
+							<th>Отчество Отца</th>
+							<th>Номер телефона Отца</th>
+							<th>Работа Отца</th>
+							<th>Адрес работа Отца</th>
+							<th>Семейное положение Отца</th>
+							<th>Дата рождения Отца</th>
+							<th>Возраст Отца</th>
+						</tr>
+					</table>
+				</section>
+
+				<!-- to add student -->
+				<section class="add" id="add">
+					<h1 class="add__title">Добавить нового студента</h1>
+					<h1 class="add__title" style="color: red">// Пока не работает !!!</h1>
+					<p class="add__title" style="color: red">добавляйте студентов через Админ Панель вот <a href="https://">ссылка</a></p>
+
+					<form class="add__form" id="add-form">
+						<!-- student data -->
+						<h3>Данные Студента</h3>
+
+						<label for="add-student-name" class="add__label">
+							<span>Имя Студента:</span>
+							<input id="add-student-name" class="add__input add__input-student" type="text" placeholder="Имя" />
+						</label>
+
+						<label for="add-student-second-name" class="add__label">
+							<span>Фамилия Студента:</span>
+							<input id="add-student-second-name" class="add__input add__input-student" type="text" placeholder="Фамилия" />
+						</label>
+
+						<label for="add-student-third-name" class="add__label">
+							<span>Отчество Студента:</span>
+							<input id="add-student-third-name" class="add__input add__input-student" type="text" placeholder="Отчество" />
+						</label>
+
+						<label for="add-student-address" class="add__label">
+							<span>Адрес Студента:</span>
+							<input id="add-student-address" class="add__input add__input-student" type="text" placeholder="Адрес" />
+						</label>
+
+						<label for="add-student-phone" class="add__label">
+							<span>Номер телефона Студента:</span>
+							<input id="add-student-phone" class="add__input add__input-student" type="text" placeholder="Номер телефона" />
+						</label>
+
+						<label for="add-student-birthday" class="add__label">
+							<span>Дата рождения Студента:</span>
+							<input id="add-student-birthday" class="add__input add__input-student" type="date" placeholder="Дата рождения" />
+						</label>
+
+						<label for="add-student-mail" class="add__label">
+							<span>Электронная почта Студента:</span>
+							<input id="add-student-mail" class="add__input add__input-student" type="email" placeholder="Почта" />
+						</label>
+
+						<label for="add-student-uin" class="add__label">
+							<span>ИИН Студента:</span>
+							<input id="add-student-uin" class="add__input add__input-student" type="text" placeholder="ИИН" />
+						</label>
+
+						<label for="add-student-family-count" class="add__label">
+							<span>Сколько человек в семье Студента:</span>
+							<input
+								id="add-student-family-count"
+								class="add__input"
+								add__input-student
+								type="number"
+								placeholder="Сколько человек в семье" />
+						</label>
+
+						<label for="add-student-nation" class="add__label">
+							<span>Национальность Студента:</span>
+							<input id="add-student-nation" class="add__input add__input-student" type="text" placeholder="Национальность" />
+						</label>
+
+						<label for="add-student-note" class="add__label">
+							<span>Заметка Студента:</span>
+							<input id="add-student-note" class="add__input add__input-student" type="text" placeholder="Заметка" />
+						</label>
+
+						<label for="add-student-note" class="add__label">
+							<span>Заметка Студента:</span>
+							<input id="add-student-note" class="add__input add__input-student" type="text" placeholder="Заметка" />
+						</label>
+
+						<!-- mother data -->
+						<h3>Данные Матери Студента</h3>
+
+						<label for="add-mother-name" class="add__label">
+							<span>Имя Матери:</span>
+							<input id="add-mother-name" class="add__input add__input-mother" type="text" placeholder="Имя" />
+						</label>
+
+						<label for="add-mother-second-name" class="add__label">
+							<span>Фамилия Матери:</span>
+							<input id="add-mother-second-name" class="add__input add__input-mother" type="text" placeholder="Фамилия" />
+						</label>
+
+						<label for="add-mother-third-name" class="add__label">
+							<span>Отчество Матери:</span>
+							<input id="add-mother-third-name" class="add__input add__input-mother" type="text" placeholder="Фамилия" />
+						</label>
+
+						<label for="add-mother-phone" class="add__label">
+							<span>Номер телефона Матери:</span>
+							<input id="add-mother-phone" class="add__input add__input-mother" type="text" placeholder="Номер телефона" />
+						</label>
+
+						<label for="add-mother-job" class="add__label">
+							<span>Работа Матери:</span>
+							<input id="add-mother-job" class="add__input add__input-mother" type="text" placeholder="Работа" />
+						</label>
+
+						<label for="add-mother-job-address" class="add__label">
+							<span>Адрес работа Матери:</span>
+							<input id="add-mother-job-address" class="add__input add__input-mother" type="text" placeholder="Адрес работа" />
+						</label>
+
+						<label for="add-mother-family" class="add__label">
+							<span>Семейное положение Матери:</span>
+							<input id="add-mother-family" class="add__input add__input-mother" type="text" placeholder="Семейное положение" />
+						</label>
+
+						<label for="add-mother-birthday" class="add__label">
+							<span>Дата рождения Матери:</span>
+							<input id="add-mother-birthday" class="add__input add__input-mother" type="date" placeholder="Дата рождения" />
+						</label>
+
+						<!-- father data -->
+						<h3>Данные Отца Студента</h3>
+
+						<label for="add-father-name" class="add__label">
+							<span>Имя Отца:</span>
+							<input id="add-father-name" class="add__input add__input-father" type="text" placeholder="Имя" />
+						</label>
+
+						<label for="add-father-second-name" class="add__label">
+							<span>Фамилия Отца:</span>
+							<input id="add-father-second-name" class="add__input add__input-father" type="text" placeholder="Фамилия" />
+						</label>
+
+						<label for="add-father-third-name" class="add__label">
+							<span>Отчество Отца:</span>
+							<input id="add-father-third-name" class="add__input add__input-father" type="text" placeholder="Фамилия" />
+						</label>
+
+						<label for="add-father-phone" class="add__label">
+							<span>Номер телефона Отца:</span>
+							<input id="add-father-phone" class="add__input add__input-father" type="text" placeholder="Номер телефона" />
+						</label>
+
+						<label for="add-father-job" class="add__label">
+							<span>Работа Отца:</span>
+							<input id="add-father-job" class="add__input add__input-father" type="text" placeholder="Работа" />
+						</label>
+
+						<label for="add-father-job-address" class="add__label">
+							<span>Адрес работа Отца:</span>
+							<input id="add-father-job-address" class="add__input add__input-father" type="text" placeholder="Адрес работа" />
+						</label>
+
+						<label for="add-father-family" class="add__label">
+							<span>Семейное положение Отца:</span>
+							<input id="add-father-family" class="add__input add__input-father" type="text" placeholder="Семейное положение" />
+						</label>
+
+						<label for="add-father-birthday" class="add__label">
+							<span>Дата рождения Отца:</span>
+							<input id="add-father-birthday" class="add__input add__input-father" type="date" placeholder="Дата рождения" />
+						</label>
+
+						<!-- add button -->
+						<button type="submit" class="add__button" id="add-button">Добавить студента</button>
+					</form>
+				</section>
+			</main>
+
+			<!-- footer -->
+			<footer class="footer">
+				<span> от <a href="https://github.com/just-sain">just.sain</a></span>
+			</footer>
+		</div>
+
+		<!-- JS / scripts -->
+		<script type="module" src="./js/main.js"></script>
+	</body>
+</html>

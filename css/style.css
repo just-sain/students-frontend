@@ -1,0 +1,164 @@
+* {
+	margin: 0;
+	padding: 0;
+
+	box-sizing: border-box;
+}
+
+html {
+	font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.6rem;
+}
+
+.wrapper {
+	width: 100%;
+	min-height: 100vh;
+
+	display: flex;
+	flex-direction: column;
+	justify-content: space-between;
+}
+
+/* header */
+.header {
+	padding: 1rem 0;
+
+	background: #000;
+
+	color: #fff;
+	text-align: center;
+}
+
+/* main / all contents styles are under of footer!*/
+.main {
+	width: 90%;
+	height: 100%;
+	margin: 0 auto;
+	padding: 5rem 0 15rem;
+}
+
+/* footer */
+.footer {
+	padding: 1rem 0;
+
+	background: #000;
+
+	text-align: center;
+	color: #fff;
+}
+
+.footer a {
+	width: 100%;
+
+	color: #6e6e6e;
+	text-decoration: underline;
+}
+
+/* content / of main! */
+.title {
+	margin-bottom: 1rem;
+	text-align: center;
+}
+
+/* table */
+.table {
+	width: 100%;
+	margin-top: 2.5rem;
+
+	border: 0.1rem solid black;
+	border-collapse: collapse;
+}
+
+.table td,
+th {
+	padding: 1rem;
+	border: 0.1rem solid black;
+	text-align: center;
+}
+
+/* add section */
+.add {
+	margin-top: 5rem;
+}
+
+.add__title {
+	margin-bottom: 3rem;
+}
+
+.add__form {
+	max-width: 70rem;
+	width: 100%;
+
+	font-size: 1.8rem;
+}
+
+.add__form h2,
+h3,
+h4 {
+	margin: 3rem 0 2.5rem;
+
+	font-style: italic;
+}
+
+.add__label {
+	margin-top: 1rem;
+	display: block;
+}
+
+.add__input {
+	width: 100%;
+	margin-top: 1rem;
+	padding: 0.5rem 1rem;
+
+	font-size: 1.7rem;
+}
+
+.add__button {
+	margin-top: 5rem;
+	padding: 1rem 2rem;
+
+	font-size: 1.8rem;
+}
+
+/* some styles for auth page */
+.auth {
+	text-align: center;
+}
+
+.auth__form {
+	margin-top: 2.5rem;
+
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	gap: 1.5rem;
+}
+
+.auth__form input {
+	max-width: 35rem;
+	width: 100%;
+	padding: 1rem 1.5rem;
+
+	font-size: 1.8rem;
+}
+
+.auth__button {
+	margin-top: 1rem;
+	padding: 0.75rem 2.25rem;
+
+	font-size: 1.8rem;
+}
+
+.auth__error {
+	display: none;
+	padding: 0.75rem 1.25rem;
+
+	background: red;
+	border-radius: 0.75rem;
+
+	font-size: 1.8rem;
+}
